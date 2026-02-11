@@ -61,7 +61,7 @@ gsap.utils.toArray("section").forEach((section) => {
 // EmailJS - Envío de formulario
 // =========================
 (function () {
-  emailjs.init("YOUR_PUBLIC_KEY"); // Reemplazá con tu Public Key real
+  emailjs.init("xVwdbB46eyW5LrqW4"); // Reemplazá con tu Public Key real
 })();
 
 const contactForm = document.getElementById("contact-form");
@@ -72,7 +72,7 @@ if (contactForm) {
     e.preventDefault();
     formStatus.innerHTML = "<span class='text-info'>Enviando mensaje...</span>";
 
-    emailjs.sendForm("service_lpndc49", "TEMPLATE_ID", this).then(
+    emailjs.sendForm("service_lpndc49", "template_qj19ozw", this).then(
       function () {
         formStatus.innerHTML =
           "<span class='text-success'>Mensaje enviado correctamente. Nos contactaremos a la brevedad.</span>";
