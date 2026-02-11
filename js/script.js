@@ -1,22 +1,55 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.querySelector('.navbar');
+document.addEventListener("DOMContentLoaded", function () {
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.padding = "0.8rem 8%";
-            navbar.style.boxShadow = "0 5px 15px rgba(0,0,0,0.1)";
-        } else {
-            navbar.style.padding = "1.2rem 8%";
-            navbar.style.boxShadow = "none";
-        }
+  /* ======================
+     AOS INIT
+  ====================== */
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 900,
+      easing: "ease-out-cubic",
+      once: true
     });
+  }
 
-    const form = document.querySelector('.contacto-form');
+  /* ======================
+     GSAP ANIMATIONS
+  ====================== */
+  if (typeof gsap !== "undefined") {
+    gsap.from(".navbar", { y: -80, opacity: 0, duration: 0.8, ease: "power2.out" });
+
+    const heroTitle = document.querySelector(".hero h1");
+    const heroText = document.querySelector(".hero p");
+    const heroBtn = document.querySelector(".hero .btn");
+
+    if (heroTitle) gsap.from(heroTitle, { y: 40, opacity: 0, duration: 1, delay: 0.3 });
+    if (heroText) gsap.from(heroText, { y: 40, opacity: 0, duration: 1, delay: 0.6 });
+    if (heroBtn) gsap.from(heroBtn, { y: 40, opacity: 0, duration: 1, delay: 0.9 });
+  }
+
+  /* ======================
+     EMAILJS FORM
+  ====================== */
+  if (typeof emailjs !== "undefined") {
+    emailjs.init("xVwdbB46eyW5LrqW4");
+
+    const form = document.getElementById("contact-form");
     if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('¡Mensaje enviado con éxito! Nos contactaremos a la brevedad.');
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const status = document.getElementById("form-status");
+        status.innerHTML = "Enviando mensaje...";
+
+        emailjs.sendForm("service_lpndc49", "template_qj19ozw", this)
+          .then(function () {
+            status.innerHTML = "<span class='text-success'>Mensaje enviado correctamente.</span>";
             form.reset();
-        });
+          }, function (error) {
+            status.innerHTML = "<span class='text-danger'>Error al enviar el mensaje. Intente nuevamente.</span>";
+            console.error("EmailJS error:", error);
+          });
+      });
     }
+  }
+
 });
