@@ -113,6 +113,9 @@ img {
   background-image: url("../images/hero-contacto.png");
 }
 
+.hero-404 {
+  background-image: url("../images/404.png");
+}
 /* =========================
    BOTONES
 ========================= */
