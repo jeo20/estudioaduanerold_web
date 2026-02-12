@@ -134,6 +134,14 @@ img {
 /* =========================
    SECCIONES
 ========================= */
+
+p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+
+
 section {
   padding: 60px 0;
 }
