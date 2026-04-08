@@ -3,186 +3,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Estudio Aduanero LD — Despachante de Aduana, Agente de Transporte Aduanero y Agente Marítimo. Soluciones profesionales en comercio exterior." />
-  <meta name="keywords" content="despachante de aduana, agente de transporte aduanero, agente marítimo, comercio exterior, importación, exportación, aduana argentina" />
+  <meta name="description" content="Servicios de Estudio Aduanero LD — Despacho de aduana, agente de transporte aduanero y agente marítimo. Soluciones profesionales en comercio exterior." />
+  <meta name="keywords" content="servicios aduaneros, despachante de aduana, agente marítimo, comercio exterior, importación, exportación" />
   <meta name="author" content="Estudio Aduanero LD" />
 
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Estudio Aduanero LD" />
-  <meta property="og:description" content="Especialistas en despachos aduaneros, transporte internacional y operaciones marítimas." />
-  <meta property="og:image" content="images/hero-home.png" />
-  <meta property="og:url" content="https://tusitio.com" />
+  <meta property="og:title" content="Estudio Aduanero LD | Servicios" />
+  <meta property="og:description" content="Conoce todos nuestros servicios de comercio exterior, despacho aduanero y logística internacional." />
+  <meta property="og:image" content="images/hero-servicios.jpg" />
+  <meta property="og:url" content="https://estudioaduanerold.com.ar/pages/servicios.html" />
   <meta property="og:type" content="website" />
 
-  <title>Estudio Aduanero LD | Inicio</title>
+  <title>Estudio Aduanero LD | Servicios</title>
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="/images/logo.png" alt="Estudio Aduanero LD" class="me-2" />
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/logo.png" alt="Estudio Aduanero LD" />
         Estudio Aduanero LD
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/pages/servicios.html">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="/pages/nosotros.html">Empresa</a></li>
-          <li class="nav-item"><a class="nav-link" href="/pages/proyectos.html">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="/pages/contacto.html">Contacto</a></li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav-links ms-auto">
+          <li><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li><a class="nav-link active" href="servicios.html">Servicios</a></li>
+          <li><a class="nav-link" href="nosotros.html">Empresa</a></li>
+          <li><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+          <li><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero hero-home d-flex align-items-center text-center">
-    <div class="container" data-aos="fade-up">
-      <h1>Especialistas en despachos aduaneros y transporte internacional</h1>
-      <p class="mb-3">Despachante de Aduana · Agente de Transporte Aduanero · Agente Marítimo</p>
-      <p class="mb-4">Soluciones profesionales, eficientes y seguras</p>
-      <a href="/pages/contacto.html" class="btn btn-primary btn-lg">Solicitar asesoramiento</a>
-    </div>
-  </section>
-
-  <!-- SERVICIOS DESTACADOS -->
-  <section class="bg-light-custom">
+  <!-- PAGE HEADER -->
+  <section class="page-header hero-servicios">
     <div class="container">
-      <h2 class="section-title text-center" data-aos="fade-up">Nuestros Servicios</h2>
-      <div class="row g-4 mt-4">
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 shadow-soft">
-            <div class="card-body text-center">
-              <div class="feature-icon"><i class="fas fa-file-contract"></i></div>
-              <h5 class="card-title">Despacho de Aduana</h5>
-              <p class="card-text">Gestión integral de importaciones y exportaciones, garantizando cumplimiento normativo y liberación eficiente de mercadería.</p>
-            </div>
+      <div class="hero-content">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones integrales para el comercio exterior y operaciones aduaneras</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS PRINCIPALES -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>¿Qué hacemos?</h2>
+        <p>Brindamos soluciones profesionales para cada necesidad de comercio exterior</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-file-contract"></i>
           </div>
+          <h3>Despacho de Aduana</h3>
+          <p>Gestión integral de importaciones y exportaciones, garantizando cumplimiento normativo y liberación eficiente de mercadería.tramites de documentación.</p>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 shadow-soft">
-            <div class="card-body text-center">
-              <div class="feature-icon"><i class="fas fa-truck-moving"></i></div>
-              <h5 class="card-title">Agente de Transporte Aduanero</h5>
-              <p class="card-text">Coordinación y control del transporte de cargas bajo régimen aduanero, asegurando trazabilidad y seguridad.</p>
-            </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-truck-moving"></i>
           </div>
+          <h3>Agente de Transporte Aduanero</h3>
+          <p>Coordinación y control del transporte de cargas bajo régimen aduanero, asegurando trazabilidad y seguridad en cada envío.</p>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 shadow-soft">
-            <div class="card-body text-center">
-              <div class="feature-icon"><i class="fas fa-ship"></i></div>
-              <h5 class="card-title">Agente Marítimo</h5>
-              <p class="card-text">Representación y gestión de operaciones marítimas, incluyendo atención a buques, cargas y trámites portuarios.</p>
-            </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-ship"></i>
           </div>
+          <h3>Agente Marítimo</h3>
+          <p>Representación y gestión de operaciones marítimas, incluyendo atención a buques, cargas y trámites portuarios.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>Asesoramiento Aduanero</h3>
+          <p>Consultoría especializada en normativa aduanera, clasificación arancelaria y estrategias de optimización operativa.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-boxes"></i>
+          </div>
+          <h3>Logística Integral</h3>
+          <p>Coordinación de toda la cadena logística, desde la原点 hasta la entrega final, con seguimiento personalizado.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <h3>Gestión Documental</h3>
+          <p>Preparación y tramitación de toda la documentación requerida para operaciones de comercio exterior.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BLOQUE DE CONFIANZA -->
-<section class="bg-light-custom py-5">
-  <div class="container">
-
-    <div class="row align-items-center">
-
-      <!-- TEXTO -->
-      <div class="col-lg-6" data-aos="fade-right">
-
-        <h2 class="section-title">
-          Compromiso, experiencia y confiabilidad
-        </h2>
-
-        <p class="text-justify">
-          En Estudio Aduanero LD brindamos un servicio integral en comercio exterior, respaldado por experiencia profesional, conocimiento normativo y atención personalizada.
-        </p>
-
-        <p class="text-justify">
-          Acompañamos cada operación desde su inicio hasta su finalización, cuidando los intereses de nuestros clientes.
-        </p>
-
-        <a href="/pages/nosotros.html" class="btn btn-primary mt-3">
-          Conocer la empresa
-        </a>
-
+  <!-- ¿POR QUÉ ELEGIRNOS? -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>¿Por qué elegirnos?</h2>
+          <p class="lead">Contamos con la experiencia y conocimiento necesarios para resolver sus operaciones de comercio exterior.</p>
+          <p>Nuestro equipo se actualiza constantemente en materia normativa para garantizar el mejor servicio y la máxima eficiencia en cada operación.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <span>Respuesta rápida y eficiente</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <span>Conocimiento normativo actualizado</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <span>Atención personalizada</span>
+            </div>
+          </div>
+          <a href="contacto.html" class="btn btn-secondary mt-4">
+            <span>Solicitar presupuesto</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="about-image">
+          <div class="about-image-wrapper">
+            <img src="../images/hero-servicios.jpg" alt="Servicios aduaneros" />
+          </div>
+          <div class="about-image-accent"></div>
+        </div>
       </div>
-
-      <!-- IMAGEN -->
-      <div class="col-lg-6 text-center" data-aos="fade-left">
-        <img src="/images/hero-servicios.jpg"
-             class="img-fluid rounded shadow-soft"
-             alt="Comercio exterior">
-      </div>
-
     </div>
+  </section>
 
-  </div>
-</section>
-
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>¿Necesita más información?</h2>
+        <p>Contáctenos para conocer cómo podemos ayudarlo en sus operaciones de comercio exterior.</p>
+        <a href="contacto.html" class="btn btn-primary">
+          <span>Contactarnos</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-logo mb-3">
-          <h5 class="footer-title"> <img src="/images/logo.png" alt="Estudio Aduanero LD" /> Estudio Aduanero LD</h5>
-          <p class="mt-3">Despachante de Aduana</p>
-          <p class="mt-3">Agente de Transporte Aduanero</p>
-          <p class="mt-3"> Agente Marítimo</p>          
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="../images/logo.png" alt="Estudio Aduanero LD" />
+            <span>Estudio Aduanero LD</span>
+          </div>
+          <p class="footer-description">Despachante de Aduana, Agente de Transporte Aduanero y Agente Marítimo. Brindamos soluciones profesionales en comercio exterior.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <h5 class="footer-title">Contacto</h5>
-          <p><i class="fas fa-map-marker-alt"></i> Paseo de los Arrieros 3068, Río Gallegos, Argentina</p>
-          <p><i class="fas fa-phone"></i> +54 9 2966 460200</p>
-          <p><i class="fas fa-envelope"></i> ldriezler@estudioaduanerold.com.ar</p>
-        </div>
-        <div class="col-md-4 mb-3">
-          <h5 class="footer-title">Enlaces</h5>
-          <ul class="list-unstyled">
+        <div class="footer-col">
+          <h4 class="footer-title">Enlaces</h4>
+          <ul class="footer-links">
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="/pages/servicios.html">Servicios</a></li>
-            <li><a href="/pages/nosotros.html">Empresa</a></li>
-            <li><a href="/pages/proyectos.html">Proyectos</a></li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Empresa</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html">Despacho de Aduana</a></li>
+            <li><a href="servicios.html">Transporte Aduanero</a></li>
+            <li><a href="servicios.html">Agente Marítimo</a></li>
+            <li><a href="contacto.html">Asesoramiento</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Contacto</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Paseo de los Arrieros 3068<br>Río Gallegos, Argentina</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+54 9 2966 460200</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>ldriezler@estudioaduanerold.com.ar</span>
+          </div>
+        </div>
       </div>
-      <div class="footer-bottom text-center">
-        <p>© 2026 Estudio Aduanero LD. Todos los derechos reservados.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Estudio Aduanero LD. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
   <!-- WHATSAPP -->
-  <a href="https://wa.me/549XXXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <a href="https://wa.me/5492966460200" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script src="/js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

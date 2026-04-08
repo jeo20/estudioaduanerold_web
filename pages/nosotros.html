@@ -3,130 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Conocé Estudio Aduanero LD, especialistas en comercio exterior, despacho aduanero, transporte internacional y operaciones marítimas." />
-  <meta name="keywords" content="estudio aduanero, despachante de aduana, agente marítimo, agente de transporte aduanero" />
+  <meta name="description" content="Conozca Estudio Aduanero LD, especialistas en comercio exterior, despacho aduanero, transporte internacional y operaciones marítimas." />
+  <meta name="keywords" content="estudio aduanero, despachante de aduana, agente marítimo, agente de transporte aduanero, empresa" />
   <meta name="author" content="Estudio Aduanero LD" />
+
+  <meta property="og:title" content="Estudio Aduanero LD | Empresa" />
+  <meta property="og:description" content="Conozca nuestra empresa y nuestro compromiso con la excelencia en comercio exterior." />
+  <meta property="og:image" content="images/hero-nosotros.jpg" />
+  <meta property="og:url" content="https://estudioaduanerold.com.ar/pages/nosotros.html" />
+  <meta property="og:type" content="website" />
 
   <title>Estudio Aduanero LD | Empresa</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="../index.html">
-        <img src="../images/logo.png" alt="Estudio Aduanero LD" class="me-2" />
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/logo.png" alt="Estudio Aduanero LD" />
         Estudio Aduanero LD
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link active" href="nosotros.html">Empresa</a></li>
-          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav-links ms-auto">
+          <li><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li><a class="nav-link active" href="nosotros.html">Empresa</a></li>
+          <li><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+          <li><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="page-header hero-nosotros d-flex align-items-center text-center">
-    <div class="container" data-aos="fade-up">
-      <h1>Nuestra Empresa</h1>
-      <p>Compromiso, experiencia y confiabilidad</p>
+  <!-- PAGE HEADER -->
+  <section class="page-header hero-nosotros">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Nuestra Empresa</h1>
+        <p>Compromiso, experiencia y confiabilidad en cada operación</p>
+      </div>
     </div>
   </section>
 
-  <!-- CONTENIDO -->
-  <section>
+  <!-- QUIÉNES SOMOS -->
+  <section class="about-section">
     <div class="container">
-      <div class="row align-items-center mb-5">
-        <div class="col-md-6" data-aos="fade-right">
-          <h2 class="section-title">Quiénes somos</h2>
-          <p class="p">
-            Estudio Aduanero LD es una firma especializada en despacho aduanero, transporte internacional
-            y operaciones marítimas. Nuestro equipo está conformado por profesionales con amplia experiencia
-            en comercio exterior y normativa aduanera.
-          </p>
-          <p class="p">
-            Acompañamos a empresas y particulares en cada etapa de sus operaciones, brindando asesoramiento
-            integral, soluciones eficientes y un servicio personalizado.
-          </p>
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>Quiénes somos</h2>
+          <p class="lead">Estudio Aduanero LD es una firma especializada en despacho aduanero, transporte internacional y operaciones marítimas.</p>
+          <p>Nuestro equipo está conformado por profesionales con amplia experiencia en comercio exterior y normativa aduanera. Acompañamos a empresas y particulares en cada etapa de sus operaciones, brindando asesoramiento integral, soluciones eficientes y un servicio personalizado.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <span>Más de 20 años de experiencia</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <span>Profesionales especializados</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <span>Atención personalizada</span>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <img src="../images/project3.jpg" alt="Equipo profesional" class="img-fluid rounded shadow-soft">
+        <div class="about-image">
+          <div class="about-image-wrapper">
+            <img src="../images/project3.jpg" alt="Equipo profesional" />
+          </div>
+          <div class="about-image-accent"></div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 shadow-soft">
-            <div class="card-body text-center">
-              <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
-              <h5 class="card-title">Misión</h5>
-              <p class="card-text">
-                Brindar servicios profesionales en comercio exterior, asegurando cumplimiento normativo,
-                eficiencia operativa y satisfacción del cliente.
-              </p>
-            </div>
+  <!-- MISIÓN, VISIÓN Y VALORES -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nuestros pilares</h2>
+        <p>Los valores que guían nuestro trabajo diario</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bullseye"></i>
           </div>
+          <h3>Misión</h3>
+          <p>Brindar servicios profesionales en comercio exterior, asegurando cumplimiento normativo, eficiencia operativa y satisfacción del cliente en cada operación.</p>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 shadow-soft">
-            <div class="card-body text-center">
-              <div class="feature-icon"><i class="fas fa-eye"></i></div>
-              <h5 class="card-title">Visión</h5>
-              <p class="card-text">
-                Ser un referente regional en servicios aduaneros, logísticos y marítimos,
-                reconocidos por nuestra excelencia profesional y confiabilidad.
-              </p>
-            </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-eye"></i>
           </div>
+          <h3>Visión</h3>
+          <p>Ser un referente regional en servicios aduaneros, logísticos y marítimos, reconocidos por nuestra excelencia profesional y confiabilidad.</p>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 shadow-soft">
-            <div class="card-body text-center">
-              <div class="feature-icon"><i class="fas fa-handshake"></i></div>
-              <h5 class="card-title">Valores</h5>
-              <p class="card-text">
-                Ética, compromiso, responsabilidad, transparencia y orientación al cliente
-                son los pilares que guían nuestro trabajo diario.
-              </p>
-            </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-handshake"></i>
           </div>
+          <h3>Valores</h3>
+          <p>Ética, compromiso, responsabilidad, transparencia y orientación al cliente son los pilares que guían nuestro trabajo diario.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>20+</h3>
+          <p>Años de experiencia</p>
+        </div>
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Operaciones anuales</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Satisfacción del cliente</p>
+        </div>
+        <div class="stat-item">
+          <h3>24/7</h3>
+          <p>Atención permanente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>¿Listo para trabajar con nosotros?</h2>
+        <p>Contáctenos y discover cómo podemos ayudarlo en sus operaciones de comercio exterior.</p>
+        <a href="contacto.html" class="btn btn-primary">
+          <span>Contactarnos</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-logo mb-3">
-          <h5 class="footer-title"> <img src="/images/logo.png" alt="Estudio Aduanero LD" /> Estudio Aduanero LD</h5>
-          <p class="mt-3">Despachante de Aduana</p>
-          <p class="mt-3">Agente de Transporte Aduanero</p>
-          <p class="mt-3"> Agente Marítimo</p>          
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="../images/logo.png" alt="Estudio Aduanero LD" />
+            <span>Estudio Aduanero LD</span>
+          </div>
+          <p class="footer-description">Despachante de Aduana, Agente de Transporte Aduanero y Agente Marítimo. Brindamos soluciones profesionales en comercio exterior.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <h5 class="footer-title">Contacto</h5>
-          <p><i class="fas fa-map-marker-alt"></i> Paseo de los Arrieros 3068, Río Gallegos, Argentina</p>
-          <p><i class="fas fa-phone"></i> +54 9 2966 460200</p>
-          <p><i class="fas fa-envelope"></i> info@estudioaduanerold.com.ar</p>
-        </div>
-        <div class="col-md-4 mb-3">
-          <h5 class="footer-title">Enlaces</h5>
-          <ul class="list-unstyled">
+        <div class="footer-col">
+          <h4 class="footer-title">Enlaces</h4>
+          <ul class="footer-links">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="servicios.html">Servicios</a></li>
             <li><a href="nosotros.html">Empresa</a></li>
@@ -134,23 +189,43 @@
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html">Despacho de Aduana</a></li>
+            <li><a href="servicios.html">Transporte Aduanero</a></li>
+            <li><a href="servicios.html">Agente Marítimo</a></li>
+            <li><a href="contacto.html">Asesoramiento</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Contacto</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Paseo de los Arrieros 3068<br>Río Gallegos, Argentina</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+54 9 2966 460200</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>ldriezler@estudioaduanerold.com.ar</span>
+          </div>
+        </div>
       </div>
-      <div class="footer-bottom text-center">
-        <p>© 2026 Estudio Aduanero LD. Todos los derechos reservados.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Estudio Aduanero LD. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
   <!-- WHATSAPP -->
-  <a href="https://wa.me/549XXXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <a href="https://wa.me/5492966460200" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
   <script src="../js/script.js"></script>
 </body>
 </html>
