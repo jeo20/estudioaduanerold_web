@@ -46,35 +46,35 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg" id="navbar" role="navigation" aria-label="Navegación principal">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../images/logo.png" alt="Estudio Aduanero LD" width="42" height="42" />
-        Estudio Aduanero LD
+  <!-- NAV HEADER -->
+  <header class="nav-header" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-container">
+      <a class="nav-logo" href="../index.html">
+        <img src="../images/logo.png" alt="Estudio Aduanero LD" />
+        <span>Estudio Aduanero LD</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
-        <span class="navbar-toggler-icon"></span>
+      
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav-links ms-auto">
-          <li><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li><a class="nav-link" href="servicios.html">Servicios</a></li>
-          <li><a class="nav-link" href="nosotros.html">Empresa</a></li>
-          <li><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-          <li><a class="nav-link active" href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
+      
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li><a class="nav-link" href="nosotros.html">Empresa</a></li>
+        <li><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+        <li><a class="nav-link active" href="contacto.html">Contacto</a></li>
+      </ul>
     </div>
-  </nav>
+  </header>
 
   <!-- PAGE HEADER -->
-  <section class="page-header hero-contacto">
+  <section class="page-header">
     <div class="container">
-      <div class="hero-content">
-        <h1>Contacto</h1>
-        <p>Estamos para asesorarlo en sus operaciones de comercio exterior</p>
-      </div>
+      <h1>Contacto</h1>
+      <p>Estamos para asesorarlo en sus operaciones de comercio exterior</p>
     </div>
   </section>
 
@@ -86,65 +86,57 @@
           <h2>Escribinos</h2>
           <p class="lead">Complete el formulario y nos pondremos en contacto a la brevedad.</p>
           
-          <form id="contact-form" class="contact-form" aria-label="Formulario de contacto">
+          <form id="contact-form">
             <div class="form-group">
               <label for="name" class="form-label">Nombre completo</label>
-              <input type="text" class="form-control" id="name" name="user_name" required aria-required="true" />
+              <input type="text" class="form-control" id="name" name="user_name" required />
             </div>
             <div class="form-group">
               <label for="email" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="email" name="user_email" required aria-required="true" />
+              <input type="email" class="form-control" id="email" name="user_email" required />
             </div>
             <div class="form-group">
               <label for="subject" class="form-label">Asunto</label>
-              <input type="text" class="form-control" id="subject" name="subject" required aria-required="true" />
+              <input type="text" class="form-control" id="subject" name="subject" required />
             </div>
             <div class="form-group">
               <label for="message" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="message" name="message" rows="5" required aria-required="true"></textarea>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">
               <span>Enviar mensaje</span>
-              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              <i class="fas fa-paper-plane"></i>
             </button>
           </form>
-          <div id="form-status" role="status" aria-live="polite"></div>
+          <div id="form-status"></div>
         </div>
         
         <div class="about-image">
           <div class="contact-info">
             <h3>Datos de contacto</h3>
             <div class="contact-info-item">
-              <div class="contact-info-icon">
-                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-              </div>
+              <i class="fas fa-map-marker-alt"></i>
               <div>
                 <strong>Dirección</strong>
                 <span>Paseo de los Arrieros 3068<br />Río Gallegos, Santa Cruz, Argentina</span>
               </div>
             </div>
             <div class="contact-info-item">
-              <div class="contact-info-icon">
-                <i class="fas fa-phone" aria-hidden="true"></i>
-              </div>
+              <i class="fas fa-phone"></i>
               <div>
                 <strong>Teléfono</strong>
                 <span>+54 9 2966 460200</span>
               </div>
             </div>
             <div class="contact-info-item">
-              <div class="contact-info-icon">
-                <i class="fas fa-envelope" aria-hidden="true"></i>
-              </div>
+              <i class="fas fa-envelope"></i>
               <div>
                 <strong>Email</strong>
                 <span>ldriezler@estudioaduanerold.com.ar</span>
               </div>
             </div>
             <div class="contact-info-item">
-              <div class="contact-info-icon">
-                <i class="fas fa-clock" aria-hidden="true"></i>
-              </div>
+              <i class="fas fa-clock"></i>
               <div>
                 <strong>Horario</strong>
                 <span>Lunes a viernes: 8:00 a 18:00<br />Sábados: 9:00 a 13:00</span>
@@ -175,16 +167,17 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-brand">
-            <img src="../images/logo.png" alt="Estudio Aduanero LD" width="40" height="40" />
+            <img src="../images/logo.png" alt="Estudio Aduanero LD" />
             <span>Estudio Aduanero LD</span>
           </div>
           <p class="footer-description">Despachante de Aduana, Agente de Transporte Aduanero y Agente Marítimo. Brindamos soluciones profesionales en comercio exterior.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
+        
         <div class="footer-col">
           <h4 class="footer-title">Enlaces</h4>
           <ul class="footer-links">
@@ -195,6 +188,7 @@
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
+        
         <div class="footer-col">
           <h4 class="footer-title">Servicios</h4>
           <ul class="footer-links">
@@ -204,22 +198,24 @@
             <li><a href="contacto.html">Asesoramiento</a></li>
           </ul>
         </div>
+        
         <div class="footer-col">
           <h4 class="footer-title">Contacto</h4>
           <div class="footer-contact-item">
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <i class="fas fa-map-marker-alt"></i>
             <span>Paseo de los Arrieros 3068<br />Río Gallegos, Argentina</span>
           </div>
           <div class="footer-contact-item">
-            <i class="fas fa-phone" aria-hidden="true"></i>
+            <i class="fas fa-phone"></i>
             <span>+54 9 2966 460200</span>
           </div>
           <div class="footer-contact-item">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <i class="fas fa-envelope"></i>
             <span>ldriezler@estudioaduanerold.com.ar</span>
           </div>
         </div>
       </div>
+      
       <div class="footer-bottom">
         <p>&copy; 2026 Estudio Aduanero LD. Todos los derechos reservados.</p>
       </div>
@@ -228,7 +224,7 @@
 
   <!-- WHATSAPP -->
   <a href="https://wa.me/5492966460200" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
-    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <i class="fab fa-whatsapp"></i>
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

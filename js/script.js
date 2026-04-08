@@ -1,7 +1,9 @@
-// =========================
-// Navbar scroll effect
-// =========================
+// ===========================================
+// NAVBAR SCROLL EFFECT
+// ===========================================
 const navbar = document.getElementById('navbar');
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
 
 if (navbar) {
   window.addEventListener('scroll', () => {
@@ -13,9 +15,28 @@ if (navbar) {
   });
 }
 
-// =========================
-// EmailJS - Envío de formulario
-// =========================
+// ===========================================
+// MOBILE MENU TOGGLE
+// ===========================================
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+    const isOpen = navMenu.classList.contains('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  
+  // Close menu when clicking a link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+// ===========================================
+// EMAILJS - CONTACTO FORM
+// ===========================================
 (function () {
   emailjs.init("xVwdbB46eyW5LrqW4");
 })();
@@ -43,19 +64,3 @@ if (contactForm) {
     );
   });
 }
-
-// =========================
-// Smooth scroll para anclas
-// =========================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  });
-});
