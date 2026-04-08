@@ -13,22 +13,49 @@
   <meta property="og:url" content="https://estudioaduanerold.com.ar" />
   <meta property="og:type" content="website" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
   <title>Estudio Aduanero LD | Inicio</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Estudio Aduanero LD",
+    "image": "https://estudioaduanerold.com.ar/images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Paseo de los Arrieros 3068",
+      "addressLocality": "Río Gallegos",
+      "addressRegion": "Santa Cruz",
+      "addressCountry": "AR"
+    },
+    "telephone": "+54-9-2966-460200",
+    "email": "ldriezler@estudioaduanerold.com.ar",
+    "url": "https://estudioaduanerold.com.ar",
+    "priceRange": "$$",
+    "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-13:00",
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg" id="navbar">
+  <nav class="navbar navbar-expand-lg" id="navbar" role="navigation" aria-label="Navegación principal">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" alt="Estudio Aduanero LD" />
+        <img src="images/logo.png" alt="Estudio Aduanero LD" width="42" height="42" />
         Estudio Aduanero LD
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -64,6 +91,10 @@
         </div>
       </div>
     </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="mouse"></div>
+      <span>Desplazar</span>
+    </div>
   </section>
 
   <!-- SERVICIOS -->
@@ -76,21 +107,21 @@
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">
-            <i class="fas fa-file-contract"></i>
+            <i class="fas fa-file-contract" aria-hidden="true"></i>
           </div>
           <h3>Despacho de Aduana</h3>
           <p>Gestión integral de importaciones y exportaciones, garantizando cumplimiento normativo y liberación eficiente de mercadería.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">
-            <i class="fas fa-truck-moving"></i>
+            <i class="fas fa-truck-moving" aria-hidden="true"></i>
           </div>
           <h3>Agente de Transporte Aduanero</h3>
           <p>Coordinación y control del transporte de cargas bajo régimen aduanero, asegurando trazabilidad y seguridad en cada envío.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">
-            <i class="fas fa-ship"></i>
+            <i class="fas fa-ship" aria-hidden="true"></i>
           </div>
           <h3>Agente Marítimo</h3>
           <p>Representación y gestión de operaciones marítimas, incluyendo atención a buques, cargas y trámites portuarios.</p>
@@ -110,33 +141,33 @@
           <div class="about-features">
             <div class="about-feature">
               <div class="about-feature-icon">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
               </div>
               <span>Más de 20 años de experiencia</span>
             </div>
             <div class="about-feature">
               <div class="about-feature-icon">
-                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
               </div>
               <span>Compromiso con la excelencia</span>
             </div>
             <div class="about-feature">
               <div class="about-feature-icon">
-                <i class="fas fa-handshake"></i>
+                <i class="fas fa-handshake" aria-hidden="true"></i>
               </div>
               <span>Atención personalizada</span>
             </div>
           </div>
           <a href="pages/nosotros.html" class="btn btn-secondary mt-4">
             <span>Conocer la empresa</span>
-            <i class="fas fa-arrow-right"></i>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
         </div>
         <div class="about-image">
           <div class="about-image-wrapper">
-            <img src="images/hero-nosotros.jpg" alt="Comercio exterior" />
+            <img src="images/hero-nosotros.jpg" alt="Equipo de Estudio Aduanero LD en oficina" loading="lazy" width="600" height="450" />
           </div>
-          <div class="about-image-accent"></div>
+          <div class="about-image-accent" aria-hidden="true"></div>
         </div>
       </div>
     </div>
@@ -174,7 +205,7 @@
         <p>Nuestro equipo de especialistas está listo para brindarle la mejor solución para sus necesidades aduaneras.</p>
         <a href="pages/contacto.html" class="btn btn-primary">
           <span>Contactarnos</span>
-          <i class="fas fa-arrow-right"></i>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
         </a>
       </div>
     </div>
@@ -186,14 +217,14 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-brand">
-            <img src="images/logo.png" alt="Estudio Aduanero LD" />
+            <img src="images/logo.png" alt="Estudio Aduanero LD" width="40" height="40" />
             <span>Estudio Aduanero LD</span>
           </div>
           <p class="footer-description">Despachante de Aduana, Agente de Transporte Aduanero y Agente Marítimo. Brindamos soluciones profesionales en comercio exterior.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="footer-col">
@@ -218,15 +249,15 @@
         <div class="footer-col">
           <h4 class="footer-title">Contacto</h4>
           <div class="footer-contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Paseo de los Arrieros 3068<br>Río Gallegos, Argentina</span>
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>Paseo de los Arrieros 3068<br />Río Gallegos, Argentina</span>
           </div>
           <div class="footer-contact-item">
-            <i class="fas fa-phone"></i>
+            <i class="fas fa-phone" aria-hidden="true"></i>
             <span>+54 9 2966 460200</span>
           </div>
           <div class="footer-contact-item">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
             <span>ldriezler@estudioaduanerold.com.ar</span>
           </div>
         </div>
@@ -238,8 +269,8 @@
   </footer>
 
   <!-- WHATSAPP -->
-  <a href="https://wa.me/5492966460200" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+  <a href="https://wa.me/5492966460200" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
